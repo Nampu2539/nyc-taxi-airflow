@@ -1,0 +1,16 @@
+{"timestamp":"2026-03-14T07:51:00.275160Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 1124. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-14T07:51:00.764523Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-14T07:51:00.765898Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/taxi_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-14T07:51:00.794252Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-14T07:51:00.794669Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-14T07:51:00.794935Z","level":"info","event":"Current task name:ingest_taxi_data","logger":"task.stdout"}
+{"timestamp":"2026-03-14T07:51:00.795076Z","level":"info","event":"Dag name:nyc_taxi_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-14T07:51:00.797008Z","level":"info","event":"Attempt 1/3: Downloading from https://data.cityofnewyork.us/resource/2upf-qytp.csv?$limit=5000","logger":"unusual_prefix_d702c0897371eb7d4e2d4218ec5c8f56c4a3fe1d_taxi_dag","filename":"taxi_dag.py","lineno":18}
+{"timestamp":"2026-03-14T07:51:04.531199Z","level":"info","event":"File saved to /tmp/nyc_taxi_raw.csv","logger":"unusual_prefix_d702c0897371eb7d4e2d4218ec5c8f56c4a3fe1d_taxi_dag","filename":"taxi_dag.py","lineno":27}
+{"timestamp":"2026-03-14T07:51:12.385506Z","level":"warning","event":"Columns (5) have mixed types. Specify dtype option on import or set low_memory=False.","category":"DtypeWarning","filename":"/opt/airflow/dags/taxi_dag.py","lineno":35,"logger":"py.warnings"}
+{"timestamp":"2026-03-14T07:51:13.299866Z","level":"info","event":"Downloaded 418871 rows","logger":"unusual_prefix_d702c0897371eb7d4e2d4218ec5c8f56c4a3fe1d_taxi_dag","filename":"taxi_dag.py","lineno":37}
+{"timestamp":"2026-03-14T07:51:13.312986Z","level":"info","event":"Pushed /tmp/nyc_taxi_raw.csv to XCom","logger":"unusual_prefix_d702c0897371eb7d4e2d4218ec5c8f56c4a3fe1d_taxi_dag","filename":"taxi_dag.py","lineno":43}
+{"timestamp":"2026-03-14T07:51:13.325809Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-14T07:51:13.341376Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-14T07:51:13.341869Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-14T07:51:13.342318Z","level":"info","event":"Task operator:<Task(PythonOperator): ingest_taxi_data>","logger":"task.stdout"}

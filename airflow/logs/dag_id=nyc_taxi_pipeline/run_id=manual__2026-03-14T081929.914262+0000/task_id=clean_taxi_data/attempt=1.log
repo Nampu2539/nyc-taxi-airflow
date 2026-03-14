@@ -1,0 +1,9 @@
+{"timestamp":"2026-03-14T08:19:47.546541Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 1568. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-14T08:19:48.225638Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-14T08:19:48.226981Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/taxi_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-14T08:19:48.277143Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-14T08:19:48.278152Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-14T08:19:48.278881Z","level":"info","event":"Current task name:clean_taxi_data","logger":"task.stdout"}
+{"timestamp":"2026-03-14T08:19:48.279491Z","level":"info","event":"Dag name:nyc_taxi_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-14T08:19:48.288188Z","level":"info","event":"Reading file from: /tmp/nyc_taxi_raw.csv","logger":"unusual_prefix_d702c0897371eb7d4e2d4218ec5c8f56c4a3fe1d_taxi_dag","filename":"taxi_dag.py","lineno":51}
+{"timestamp":"2026-03-14T08:23:51.044339Z","level":"critical","event":"Process terminated by signal. Likely out of memory error (OOM). For more information, see https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#process-terminated-by-signal.","signal":-9,"signal_name":"SIGKILL","logger":"task"}

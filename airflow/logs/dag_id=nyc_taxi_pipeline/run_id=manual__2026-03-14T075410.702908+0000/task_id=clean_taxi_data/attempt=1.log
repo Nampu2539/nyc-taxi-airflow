@@ -1,0 +1,21 @@
+{"timestamp":"2026-03-14T07:54:27.652407Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 1183. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-14T07:54:28.012656Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-14T07:54:28.015338Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/taxi_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-14T07:54:28.055405Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-14T07:54:28.056028Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-14T07:54:28.056396Z","level":"info","event":"Current task name:clean_taxi_data","logger":"task.stdout"}
+{"timestamp":"2026-03-14T07:54:28.056665Z","level":"info","event":"Dag name:nyc_taxi_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-14T07:54:28.066768Z","level":"info","event":"Reading file from: /tmp/nyc_taxi_raw.csv","logger":"unusual_prefix_d702c0897371eb7d4e2d4218ec5c8f56c4a3fe1d_taxi_dag","filename":"taxi_dag.py","lineno":49}
+{"timestamp":"2026-03-14T07:54:34.860383Z","level":"info","event":"Loaded 759703 rows","logger":"unusual_prefix_d702c0897371eb7d4e2d4218ec5c8f56c4a3fe1d_taxi_dag","filename":"taxi_dag.py","lineno":53}
+{"timestamp":"2026-03-14T07:54:34.933243Z","level":"info","event":"Removed 1476 rows by fare_amount","logger":"unusual_prefix_d702c0897371eb7d4e2d4218ec5c8f56c4a3fe1d_taxi_dag","filename":"taxi_dag.py","lineno":58}
+{"timestamp":"2026-03-14T07:54:35.016452Z","level":"info","event":"Removed 4847 rows by trip_distance","logger":"unusual_prefix_d702c0897371eb7d4e2d4218ec5c8f56c4a3fe1d_taxi_dag","filename":"taxi_dag.py","lineno":63}
+{"timestamp":"2026-03-14T07:54:35.017481Z","level":"warning","event":"Coordinate columns not found, skipping. Available: ['vendorid', 'tpep_pickup_datetime', 'tpep_dropoff_datetime', 'passenger_count', 'trip_distance', 'ratecodeid', 'store_and_fwd_flag', 'pulocationid', 'dolocationid', 'payment_type', 'fare_amount', 'extra', 'mta_tax', 'tip_amount', 'tolls_amount', 'improvement_surcharge', 'total_amount', 'congestion_surcharge']","logger":"unusual_prefix_d702c0897371eb7d4e2d4218ec5c8f56c4a3fe1d_taxi_dag","filename":"taxi_dag.py","lineno":77}
+{"timestamp":"2026-03-14T07:54:35.119936Z","level":"info","event":"Removed 0 rows by null values","logger":"unusual_prefix_d702c0897371eb7d4e2d4218ec5c8f56c4a3fe1d_taxi_dag","filename":"taxi_dag.py","lineno":82}
+{"timestamp":"2026-03-14T07:55:08.516538Z","level":"info","event":"Parsed tpep_pickup_datetime as datetime","logger":"unusual_prefix_d702c0897371eb7d4e2d4218ec5c8f56c4a3fe1d_taxi_dag","filename":"taxi_dag.py","lineno":86}
+{"timestamp":"2026-03-14T07:55:15.626353Z","level":"info","event":"Saved 753380 clean rows to /tmp/nyc_taxi_clean.csv","logger":"unusual_prefix_d702c0897371eb7d4e2d4218ec5c8f56c4a3fe1d_taxi_dag","filename":"taxi_dag.py","lineno":90}
+{"timestamp":"2026-03-14T07:55:15.626525Z","level":"info","event":"Total removed: 6323 rows","logger":"unusual_prefix_d702c0897371eb7d4e2d4218ec5c8f56c4a3fe1d_taxi_dag","filename":"taxi_dag.py","lineno":91}
+{"timestamp":"2026-03-14T07:55:15.642217Z","level":"info","event":"Pushed /tmp/nyc_taxi_clean.csv to XCom","logger":"unusual_prefix_d702c0897371eb7d4e2d4218ec5c8f56c4a3fe1d_taxi_dag","filename":"taxi_dag.py","lineno":94}
+{"timestamp":"2026-03-14T07:55:15.661250Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-14T07:55:15.678163Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-14T07:55:15.678787Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-14T07:55:15.679354Z","level":"info","event":"Task operator:<Task(PythonOperator): clean_taxi_data>","logger":"task.stdout"}
